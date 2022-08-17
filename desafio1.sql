@@ -6,7 +6,7 @@ USE SpotifyClone;
 CREATE TABLE planos(
 	plano_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     plano VARCHAR(20) NOT NULL,
-    valor_plano DOUBLE NOT NULL
+    valor_plano DECIMAL(3, 2) NOT NULL
 ) engine = InnoDB;
 
 CREATE TABLE usuarios(
@@ -67,7 +67,7 @@ CREATE TABLE historico_usuario(
   VALUES
     ('Barbara Liskov', 82, 1, '2019-10-20'),
     ('Robert Cecil Martin', 58, 1, '2017-01-06'),
-    ('Ada Lovelace', 82, 1, '2019-10-20'),
+    ('Ada Lovelace', 82, 2, '2019-10-20'),
     ('Martin Fowler', 46, 2, '2017-01-17'),
     ('Sandi Metz', 58, 2 ,'2018-04-29'),
     ('Paulo Freire', 19, 3, '2018-02-14'),
